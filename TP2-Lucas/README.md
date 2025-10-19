@@ -1,6 +1,6 @@
 # 🚗🚤 TP2 - Héritage multiple et exceptions en C++
 
-## 🎯 Objectif
+## Objectif
 
 **CPP TP2 – héritage multiple et de la création d’exceptions**
 L’objectif principal est de mettre en pratique :
@@ -9,8 +9,9 @@ L’objectif principal est de mettre en pratique :
 
 ---
 
-## 🧩 Structure du projet
+## Structure du projet
 
+```
 TP2_LUCAS/
 ├── Vehicule.hpp
 ├── Vehicule.cpp
@@ -25,6 +26,7 @@ TP2_LUCAS/
 ├── log.txt
 ├── Compte-rendu - TP2 - CPP.pdf
 └── README.md
+```
 
 
 ---
@@ -53,7 +55,7 @@ int vitesseMaxVoiture_;
 int vitesseMaxBateau_;
 et une méthode spécifique :
 void changerMode(bool bateau); // Permet de basculer entre les deux modes
-
+```
 ---
 
 ## Tests
@@ -77,5 +79,5 @@ Elles permettent de :
 
 ## Auteur
 
-Tp - Lucas Oros
+Lucas Oros
 Centrale Nantes, SEC 2027 
