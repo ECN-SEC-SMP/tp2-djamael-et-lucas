@@ -14,11 +14,14 @@ Bateau::Bateau(int vitesseMax, int nbPlaces, int occupants) : Vehicule(vitesseMa
 
 void Bateau::demarrer(){
     Vehicule::demarrer(); // Appel de la méthode de la classe de base
+    cout << "Démarrage d'un bateau" << endl;
     etat_=MARCHE;
     vitesse_=10;
 }
 
 void Bateau::arreter(){
+    Vehicule::arreter(); // Appel de la méthode de la classe de base
+    cout << "Arrêt d'un bateau" << endl;
     Vehicule::arreter(); // Appel de la méthode de la classe de base
     etat_=ARRET;
     vitesse_=0;

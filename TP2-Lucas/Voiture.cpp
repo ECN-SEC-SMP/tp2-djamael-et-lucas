@@ -14,12 +14,14 @@ Voiture::Voiture(int vitesseMax, int nbPlaces, int occupants) : Vehicule(vitesse
 
 void Voiture::demarrer(){
     Vehicule::demarrer(); // Appel de la méthode de la classe de base
+    cout << "Démarrage d'une voiture" << endl;
     etat_=MARCHE;
-    vitesse_=10;
+    vitesse_=10; // Vitesse initiale lors du démarrage (arbitraire)
 }
 
 void Voiture::arreter(){   
     Vehicule::arreter(); // Appel de la méthode de la classe de base
+    cout << "Arrêt d'une voiture" << endl;
     etat_=ARRET;
     vitesse_=0;
 }

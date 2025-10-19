@@ -32,6 +32,7 @@ void Voiture_test(void){
     v.descendre(1);
     v.depanner();
     v.demarrer();
+    v.arreter();
     cout << v;
 }
 
@@ -75,6 +76,51 @@ void voitureAmphibie_test(void){
 }
 
 
+/*
+    * Fonctions de test pour les erreurs
+*/
+
+void Vehicule_test_erreur_vmax(void){
+    Voiture v(180,5,1);
+    cout << "Voiture: " << v;
+
+    v.monter(2);
+    v.demarrer();
+    v.accelerer(190); // Devrait provoquer une erreur : YES
+    cout << v;
+}
+
+void Vehicule_test_erreur_panne(void){
+    Voiture v(180,5,1);
+    cout << "Voiture: " << v;
+
+    v.monter(2);
+    v.demarrer();
+    v.mettreEnPanne(0.7); // Devrait provoquer une panne severe
+    v.demarrer(); // Devrait provoquer une erreur : YES
+    cout << v;
+}
+
+void Vehicule_test_erreur_occupantsMax(void){
+    Voiture v(180,5,1);
+    cout << "Voiture: " << v;
+
+    v.monter(5); // Devrait provoquer une erreur : YES
+    v.demarrer();
+    cout << v;
+}
+
+void Vehicule_test_erreur_descendreMax(void){
+    Voiture v(180,5,1);
+    cout << "Voiture: " << v;
+
+    v.monter(2);
+    v.descendre(3); // Devrait provoquer une erreur : YES
+    v.demarrer();
+    cout << v;
+}
+
+
 int main()
 {
     cout << "TP2: CPP" << endl;
@@ -86,6 +132,11 @@ int main()
     cout << "------------------------" << endl;
     voitureAmphibie_test();
     cout << "------------------------" << endl;
+
+    //Vehicule_test_erreur_vmax();
+    //Vehicule_test_erreur_panne();
+    //Vehicule_test_erreur_occupantsMax();
+    //Vehicule_test_erreur_descendreMax();
 
     return 0;
 }

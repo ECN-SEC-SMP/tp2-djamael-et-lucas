@@ -1,0 +1,62 @@
+PS C:\Users\Lucas\Desktop\Centrale TP\CPP\tp2-djamael-et-lucas\TP2-Lucas> make run
+g++ -std=c++17 -Wall -Wextra -O2 -c main.cpp
+g++ -o TP2exe main.o Vehicule.o Voiture.o Bateau.o VoitureAmphibie.o
+Activation de l'encodage UTF-8 pour le terminal...
+Lancement de l'exécutable
+.\TP2exe.exe
+TP2: CPP
+
+Voiture: Vitesse : 0 / Vitesse max : 180 / Nombre de places : 5 / Occupants : 1 / Etat : ARRET
+Démarrage d'une voiture
+Vitesse : 70 / Vitesse max : 180 / Nombre de places : 5 / Occupants : 3 / Etat : PANNE_SEVERE
+Démarrage d'une voiture
+Arrêt d'une voiture
+Vitesse : 0 / Vitesse max : 180 / Nombre de places : 5 / Occupants : 2 / Etat : ARRET
+Destructeur de la classe Voiture
+------------------------
+Bateau: Vitesse : 0 / Vitesse max : 80 / Nombre de places : 20 / Occupants : 5 / Etat : ARRET
+Démarrage d'un bateau
+Vitesse : 40 / Vitesse max : 80 / Nombre de places : 20 / Occupants : 8 / Etat : PANNE_LEGERE
+Démarrage d'un bateau
+Vitesse : 10 / Vitesse max : 80 / Nombre de places : 20 / Occupants : 6 / Etat : MARCHE
+Destructeur de la classe Bateau
+------------------------
+Constructeur de la classe VoitureAmphibie
+=== VoitureAmphibie ===
+Vitesse max en mode voiture : 150
+Vitesse max en mode bateau  : 50
+Nombre de places : 4
+Occupants : 1
+Etat : ARRET
+
+-- Mode voiture --
+Montée de 2 occupants dans une voiture amphibie
+Démarrage d'une voiture amphibie
+Démarrage d'une voiture
+Accélération d'une voiture amphibie de 100
+Vitesse : 110 / Vitesse max : 150 / Nombre de places : 4 / Occupants : 3 / Etat : MARCHE
+Mise en panne d'une voiture amphibie
+=== VoitureAmphibie ===
+Vitesse max en mode voiture : 150
+Vitesse max en mode bateau  : 50
+Nombre de places : 4
+Occupants : 3
+Etat : PANNE_SEVERE
+Descente de 1 occupants d'une voiture amphibie
+Dépannage d'une voiture amphibie
+
+-- Changement en mode bateau --
+Passage en mode BATEAU
+Démarrage d'une voiture amphibie
+Démarrage d'une voiture
+Accélération d'une voiture amphibie de 30
+=== VoitureAmphibie ===
+Vitesse max en mode voiture : 150
+Vitesse max en mode bateau  : 50
+Nombre de places : 4
+Occupants : 2
+Etat : MARCHE
+Destructeur de la classe VoitureAmphibie
+Destructeur de la classe Bateau
+Destructeur de la classe Voiture
+------------------------
