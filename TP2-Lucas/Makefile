@@ -5,8 +5,7 @@
 # === Configuration ===
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -O2
-#OBJ = main.o lexique.o lexique_ligne.o utilitaire.o test.o
-OBJ = main.o
+OBJ = main.o Vehicule.o Voiture.o Bateau.o VoitureAmphibie.o
 TARGET = TP2exe
 
 # === Règle par défaut ===
